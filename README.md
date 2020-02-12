@@ -1,4 +1,4 @@
-# Artificial-Intelligence-Natural-Language-Understanding
+Artificial-Intelligence-Natural-Language-Understanding
 CPS 721 Artificial Intelligence - Natural Language Understanding Project completed in Prolog
 
 <b>Rules</b>
@@ -9,7 +9,7 @@ CPS 721 Artificial Intelligence - Natural Language Understanding Project complet
 5) The surface of the table is divided into 5 or 6 desinated areas.
 6) Each block or pile of blocks is located exactly in one of those areas.
 
-<b>Table Layout</b>
+Table Layout
 -------------------------
 |   |   |   |   |   |   |
 | 1 | 2 | 3 | 4 | 5 | 6 |
