@@ -1,4 +1,4 @@
-Artificial-Intelligence-Natural-Language-Understanding
+# Artificial-Intelligence-Natural-Language-Understanding
 CPS 721 Artificial Intelligence - Natural Language Understanding Project completed in Prolog
 
 <b>Rules</b>
@@ -8,13 +8,6 @@ CPS 721 Artificial Intelligence - Natural Language Understanding Project complet
 4) Each block has AT MOST one other block on top of it (CANNOT PUT ANY BLOCKS ON TOP OF PYRAMIDS OR WEDGES, BUT PYRAMIDS AND WEDGES CAN BE ON TOP TOWER OF CUBES).
 5) The surface of the table is divided into 5 or 6 desinated areas.
 6) Each block or pile of blocks is located exactly in one of those areas.
-
-Table Layout
--------------------------
-|   |   |   |   |   |   |
-| 1 | 2 | 3 | 4 | 5 | 6 |
-|   |   |   |   |   |   |
--------------------------
 
 <b>Predicates Defined</b>
 1) cube(Name), wedge(Name), pyramid(Name). \\ Defines the type of block with a unique name
