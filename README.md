@@ -9,13 +9,13 @@ CPS 721 Artificial Intelligence - Natural Language Understanding Project complet
 5) The surface of the table is divided into 5 or 6 desinated areas.
 6) Each block or pile of blocks is located exactly in one of those areas.
 
-Table Layout
- -----------------------
-|	  |	  |	  |	  |	  |	  |   
+<b>Table Layout</b>
+-------------------------
+|   |   |   |   |   |   |
 | 1 | 2 | 3 | 4 | 5 | 6 |
-|	  |	  |	  |	  |	  |	  |
- -----------------------
- 
+|   |   |   |   |   |   |
+-------------------------
+
 <b>Predicates Defined</b>
 1) cube(Name), wedge(Name), pyramid(Name). \\ Defines the type of block with a unique name
 2) colour(Block,Colour) \\ Takes block name and assigns it a colour
