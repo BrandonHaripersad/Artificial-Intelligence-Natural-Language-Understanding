@@ -23,6 +23,8 @@ CPS 721 Artificial Intelligence - Natural Language Understanding Project complet
 1) findall(Temp, Goal, List) \\ Produces a list of all possible solutions for the query inputted in Goal.
 2) length(Count, List) \\ Produces the length of the list inputted in List.
 
+<b>Scene.pdf outlines the layout of the table and shapes</b>
+
 <b>EXAMPLE INPUTS</b> <br>
 
 ?- cube(X). <br>
