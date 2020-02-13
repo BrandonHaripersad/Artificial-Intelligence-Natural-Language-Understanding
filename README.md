@@ -23,184 +23,184 @@ CPS 721 Artificial Intelligence - Natural Language Understanding Project complet
 1) findall(Temp, Goal, List) \\ Produces a list of all possible solutions for the query inputted in Goal.
 2) length(Count, List) \\ Produces the length of the list inputted in List.
 
-<b>EXAMPLE INPUTS</b>
+<b>EXAMPLE INPUTS</b> <br>
 ?- cube(X). <br>
 X = cube01 <br>
 Yes (0.00s cpu, solution 1, maybe more) <br>
 ?- wedge(X). <br>
-X = wedge01
+X = wedge01 <br>
 Yes (0.00s cpu, solution 1, maybe more) <br>
 ?- pyramid(X). <br>
-X = pyramid01
-Yes (0.00s cpu, solution 1, maybe more)
-?- cube(X), size(X, small), colour(X, red).
-X = cube01
-Yes (0.00s cpu, solution 1, maybe more)
-?- pyramid(X), size(X, small), colour(X, red).
-No (0.00s cpu)
-?- wedge(X), size(X, small), colour(X, red).
-No (0.00s cpu)
-?- wedge(X), size(X, large), colour(X, red), locatedOn(X, Y), not Y = cube.
-X = wedge03
-Y = 6
-Yes (0.00s cpu)
-?- size(X, small), colour(X, green).
-X = pyramid01
-Yes (0.00s cpu, solution 1, maybe more)
-X = cube06
-Yes (0.00s cpu, solution 2)
-?- pyramid(X), colour(X, blue), size(Y, small), locatedOn(X, Y), Y is cube.
-X = pyramid03
-Y = cube06
-Yes (0.00s cpu)
-?- pyramid(X), wedge(Y), colour(Y, red), beside(X, Y).
-X = pyramid01
-Y = wedge03
-Yes (0.00s cpu, solution 1, maybe more)
-?- wedge(X), colour(Y, blue), above(X, Y), cube(Z), colour(Z, green), size(Z, large), beside(Y, Z).
-X = wedge02
-Y = cube02
-Z = cube03
-Yes (0.00s cpu, solution 1, maybe more)
-?- pyramid(X), colour(X, blue), size(X, large), cube(Y), size(Y, large), beside(Z, Y), above(X, Z).
-X = pyramid03
-Y = cube03
-Z = cube04
-Yes (0.00s cpu, solution 1, maybe more)
+X = pyramid01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- cube(X), size(X, small), colour(X, red). <br>
+X = cube01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- pyramid(X), size(X, small), colour(X, red). <br>
+No (0.00s cpu) <br>
+?- wedge(X), size(X, small), colour(X, red). <br>
+No (0.00s cpu) <br>
+?- wedge(X), size(X, large), colour(X, red), locatedOn(X, Y), not Y = cube. <br>
+X = wedge03 <br>
+Y = 6 <br>
+Yes (0.00s cpu) <br>
+?- size(X, small), colour(X, green). <br>
+X = pyramid01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+X = cube06 <br>
+Yes (0.00s cpu, solution 2) <br>
+?- pyramid(X), colour(X, blue), size(Y, small), locatedOn(X, Y), Y is cube. <br>
+X = pyramid03 <br>
+Y = cube06 <br>
+Yes (0.00s cpu) <br>
+?- pyramid(X), wedge(Y), colour(Y, red), beside(X, Y). <br>
+X = pyramid01 <br>
+Y = wedge03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- wedge(X), colour(Y, blue), above(X, Y), cube(Z), colour(Z, green), size(Z, large), beside(Y, Z). <br>
+X = wedge02 <br>
+Y = cube02 <br>
+Z = cube03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- pyramid(X), colour(X, blue), size(X, large), cube(Y), size(Y, large), beside(Z, Y), above(X, Z). <br>
+X = pyramid03 <br>
+Y = cube03 <br>
+Z = cube04 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
 
 
-?- what([a, large, red, wedge, on, the, table], X).
-X = wedge03
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([any, small, green, block], X).
-X = pyramid01
-Yes (0.00s cpu, solution 1, maybe more)
-X = cube06
-Yes (0.00s cpu, solution 2, maybe more)
-?- what([any, blue, pyramid, on, a, small, cube], X).
-X = pyramid03
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, pyramid, beside, a, red, wedge], X).
-X = pyramid01
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, wedge, above, a, blue, block, beside, a, large, green, cube], X).
-X = wedge02
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, large, blue, pyramid, above, a, block, beside, a, large, cube], X).
-X = pyramid03
-Yes (0.00s cpu, solution 1, maybe more)
+?- what([a, large, red, wedge, on, the, table], X). <br>
+X = wedge03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([any, small, green, block], X). <br>
+X = pyramid01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+X = cube06 <br>
+Yes (0.00s cpu, solution 2, maybe more) <br>
+?- what([any, blue, pyramid, on, a, small, cube], X). <br>
+X = pyramid03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, pyramid, beside, a, red, wedge], X). <br>
+X = pyramid01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, wedge, above, a, blue, block, beside, a, large, green, cube], X). <br>
+X = wedge02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, large, blue, pyramid, above, a, block, beside, a, large, cube], X). <br>
+X = pyramid03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
 
-NEW
-?- what([a, small, wedge, above, a, small, block], X).
-X = wedge01
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, red, pyramid, above, a, large, block, beside, a, medium, block], X).
-X = pyramid02
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, large, pyramid, above, a, medium, block], X).
-X = pyramid03
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, medium, green, cube, below, a, large, blue, block], X).
-X = cube04
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, large, cube, below, a, small, cube, beside, a, pyramid], X).
-No (0.00s cpu)
-?- what([a, block, above, a, block, beside, a, block], X).
-X = cube05
-Yes (0.00s cpu, solution 1, maybe more)
-X = cube05
-Yes (0.00s cpu, solution 2, maybe more)
-X = cube06
-Yes (0.00s cpu, solution 3, maybe more)
-X = cube06
-Yes (0.00s cpu, solution 4, maybe more)
-X = pyramid02
-Yes (0.00s cpu, solution 5, maybe more)
-X = pyramid02
-Yes (0.00s cpu, solution 6, maybe more)
-X = pyramid03
-Yes (0.00s cpu, solution 7, maybe more)
-X = pyramid03
-Yes (0.00s cpu, solution 8, maybe more)
-X = wedge01
-Yes (0.00s cpu, solution 9, maybe more)
-X = wedge02
-Yes (0.00s cpu, solution 10, maybe more)
-X = wedge02
-Yes (0.00s cpu, solution 11, maybe more)
-?- what([a, cube, below, a, pyramid, beside, a, block, below, a, wedge], X).
-X = cube03
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, block, above, a, block, beside, a, pyramid], X).
-X = cube05
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, wedge, beside, a, pyramid, beside, a, block], X).
-X = wedge03
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, wedge, above, a, block, beside, a, block, below, a, pyramid], X).
-X = wedge02
-Yes (0.00s cpu, solution 1, maybe more)
-
-?- what([the, red, block], X).
-No (0.00s cpu)
-?- what([the, pyramid, above, the, cube], X).
-No (0.00s cpu)
-?- what([the, wedge, above, a, cube, beside, the, cube], X).
-No (0.00s cpu)
-?- what([a, wedge, above, a, cube, beside, a, cube], X).
-X = wedge01
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([the, green, wedge, above, a, cube], X).
-X = wedge02
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([the, blue, cube, above, a, green, cube], X).
-X = cube05
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([the, blue, pyramid, above, a, small, green, cube], X).
-X = pyramid03
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([the, cube, below, a, wedge], X).
-No (0.00s cpu)
-
-?- what([a, cube, between, a, pyramid, and, a, pyramid], X).
-X = cube04
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, cube, between, a, pyramid, and, a, wedge], X).
-X = cube04
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, cube, between, a, cube, and, a, block], X).
-X = cube02
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, block, between, a, pyramid, and, a, wedge], X).
-X = cube04
-Yes (0.01s cpu, solution 3, maybe more)
-X = cube05
-Yes (0.01s cpu, solution 4, maybe more)
-X = cube06
-Yes (0.01s cpu, solution 6, maybe more)
-X = pyramid01
-Yes (0.03s cpu, solution 13, maybe more)
-X = pyramid03
-Yes (0.03s cpu, solution 14, maybe more)
-X = wedge03
-Yes (0.05s cpu, solution 21, maybe more)
-No (0.05s cpu)
-?- what([the, cube, between, a, cube, and, a, cube], X).
-No (0.00s cpu)
-?- what([a, blue, large, cube, between, a, red, pyramid, and, a, red, wedge], X).
-X = cube05
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, red, pyramid, above, a, cube, between, a, block, and, a, pyramid], X).
-X = pyramid02
-Yes (0.00s cpu, solution 1, maybe more)
-?- what([a, small, green, cube, below, a, pyramid, between, a, green, wedge, and, a, small, pyramid], X).
-X = cube06
-Yes (0.00s cpu, solution 1, maybe more)
-what([a,green,wedge,between,a,small,red,cube,and,a,small,green,cube,above,a,large,blue,cube],X)
-?- what([a, green, wedge, between, a, small, red, cube, and, a, small, green, cube, above, a, large, blue, ...], X).
-X = wedge02
-Yes (0.00s cpu, solution 1, maybe more)
-what([a,red,pyramid,above,a,cube,between,a,wedge,and,a,pyramid,above,a,cube],X)
-?- what([a, red, pyramid, above, a, cube, between, a, wedge, and, a, pyramid, above, a, cube], X).
-X = pyramid02
-Yes (0.00s cpu, solution 1, maybe more)
+NEW <br>
+?- what([a, small, wedge, above, a, small, block], X). <br>
+X = wedge01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, red, pyramid, above, a, large, block, beside, a, medium, block], X). <br>
+X = pyramid02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, large, pyramid, above, a, medium, block], X). <br>
+X = pyramid03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, medium, green, cube, below, a, large, blue, block], X). <br>
+X = cube04 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, large, cube, below, a, small, cube, beside, a, pyramid], X). <br>
+No (0.00s cpu) <br>
+?- what([a, block, above, a, block, beside, a, block], X). <br>
+X = cube05 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+X = cube05 <br>
+Yes (0.00s cpu, solution 2, maybe more) <br>
+X = cube06 <br>
+Yes (0.00s cpu, solution 3, maybe more) <br>
+X = cube06 <br>
+Yes (0.00s cpu, solution 4, maybe more) <br>
+X = pyramid02 <br>
+Yes (0.00s cpu, solution 5, maybe more) <br>
+X = pyramid02 <br>
+Yes (0.00s cpu, solution 6, maybe more) <br>
+X = pyramid03 <br>
+Yes (0.00s cpu, solution 7, maybe more) <br>
+X = pyramid03 <br>
+Yes (0.00s cpu, solution 8, maybe more) <br>
+X = wedge01 <br>
+Yes (0.00s cpu, solution 9, maybe more) <br>
+X = wedge02 <br>
+Yes (0.00s cpu, solution 10, maybe more) <br>
+X = wedge02 <br>
+Yes (0.00s cpu, solution 11, maybe more) <br>
+?- what([a, cube, below, a, pyramid, beside, a, block, below, a, wedge], X). <br>
+X = cube03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, block, above, a, block, beside, a, pyramid], X). <br>
+X = cube05 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, wedge, beside, a, pyramid, beside, a, block], X). <br>
+X = wedge03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, wedge, above, a, block, beside, a, block, below, a, pyramid], X). <br>
+X = wedge02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+ <br>
+?- what([the, red, block], X). <br>
+No (0.00s cpu) <br>
+?- what([the, pyramid, above, the, cube], X). <br>
+No (0.00s cpu) <br>
+?- what([the, wedge, above, a, cube, beside, the, cube], X). <br>
+No (0.00s cpu) <br>
+?- what([a, wedge, above, a, cube, beside, a, cube], X). <br>
+X = wedge01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([the, green, wedge, above, a, cube], X). <br>
+X = wedge02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([the, blue, cube, above, a, green, cube], X). <br>
+X = cube05 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([the, blue, pyramid, above, a, small, green, cube], X). <br>
+X = pyramid03 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([the, cube, below, a, wedge], X). <br>
+No (0.00s cpu) <br>
+ <br>
+?- what([a, cube, between, a, pyramid, and, a, pyramid], X). <br>
+X = cube04 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, cube, between, a, pyramid, and, a, wedge], X). <br>
+X = cube04 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, cube, between, a, cube, and, a, block], X). <br>
+X = cube02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, block, between, a, pyramid, and, a, wedge], X). <br>
+X = cube04 <br>
+Yes (0.01s cpu, solution 3, maybe more) <br>
+X = cube05 <br>
+Yes (0.01s cpu, solution 4, maybe more) <br>
+X = cube06 <br>
+Yes (0.01s cpu, solution 6, maybe more) <br>
+X = pyramid01 <br>
+Yes (0.03s cpu, solution 13, maybe more) <br>
+X = pyramid03 <br>
+Yes (0.03s cpu, solution 14, maybe more) <br>
+X = wedge03 <br>
+Yes (0.05s cpu, solution 21, maybe more) <br>
+No (0.05s cpu) <br>
+?- what([the, cube, between, a, cube, and, a, cube], X). <br>
+No (0.00s cpu) <br>
+?- what([a, blue, large, cube, between, a, red, pyramid, and, a, red, wedge], X). <br>
+X = cube05 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, red, pyramid, above, a, cube, between, a, block, and, a, pyramid], X). <br>
+X = pyramid02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- what([a, small, green, cube, below, a, pyramid, between, a, green, wedge, and, a, small, pyramid], X). <br>
+X = cube06 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+what([a,green,wedge,between,a,small,red,cube,and,a,small,green,cube,above,a,large,blue,cube],X) <br>
+?- what([a, green, wedge, between, a, small, red, cube, and, a, small, green, cube, above, a, large, blue, ...], X). <br>
+X = wedge02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+what([a,red,pyramid,above,a,cube,between,a,wedge,and,a,pyramid,above,a,cube],X) <br>
+?- what([a, red, pyramid, above, a, cube, between, a, wedge, and, a, pyramid, above, a, cube], X). <br>
+X = pyramid02 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
