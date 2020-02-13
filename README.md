@@ -24,6 +24,7 @@ CPS 721 Artificial Intelligence - Natural Language Understanding Project complet
 2) length(Count, List) \\ Produces the length of the list inputted in List.
 
 <b>EXAMPLE INPUTS</b> <br>
+
 ?- cube(X). <br>
 X = cube01 <br>
 Yes (0.00s cpu, solution 1, maybe more) <br>
