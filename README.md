@@ -24,13 +24,13 @@ CPS 721 Artificial Intelligence - Natural Language Understanding Project complet
 2) length(Count, List) \\ Produces the length of the list inputted in List.
 
 <b>EXAMPLE INPUTS</b>
-?- cube(X).
-X = cube01
-Yes (0.00s cpu, solution 1, maybe more)
-?- wedge(X).
+?- cube(X). <br>
+X = cube01 <br>
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- wedge(X). <br>
 X = wedge01
-Yes (0.00s cpu, solution 1, maybe more)
-?- pyramid(X).
+Yes (0.00s cpu, solution 1, maybe more) <br>
+?- pyramid(X). <br>
 X = pyramid01
 Yes (0.00s cpu, solution 1, maybe more)
 ?- cube(X), size(X, small), colour(X, red).
